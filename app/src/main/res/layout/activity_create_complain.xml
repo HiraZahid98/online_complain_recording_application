@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".create_complain"
     android:orientation="vertical"
+    android:background="@drawable/background"
     >
 
     <TextView
@@ -16,7 +17,19 @@
         android:text="CREATE COMPLAIN"
         android:textColor="#F31EC4C4"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColorHint="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#F2F7F6"
+        android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/complain_id"
@@ -24,14 +37,17 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:hint="Enter Complain ID" />
+        android:hint="Enter Complain ID"
+        android:textColor="#F2FFFFFF"
+        android:textColorHint="#CEFFFFFF" />
 
     <TextView
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="Select Complain Category" />
+        android:text="Select Complain Category"
+        android:textColor="#CEFFFFFF" />
 
    <Spinner
        android:layout_width="360dp"
@@ -40,6 +56,7 @@
        android:entries="@array/categories"
        android:layout_gravity="center"
        />
+
     <TextView
         android:layout_width="360dp"
         android:layout_height="wrap_content"
@@ -47,7 +64,7 @@
         android:layout_marginTop="20dp"
         android:text="Select Complain Severity"
 
-        />
+        android:textColor="#CEFFFFFF" />
 
     <Spinner
         android:layout_width="360dp"
@@ -56,14 +73,16 @@
         android:entries="@array/severity"
         android:layout_gravity="center"
         />
+
     <EditText
         android:id="@+id/description"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Complain Description"
         android:layout_marginTop="20dp"
-        />
+        android:hint="Complain Description"
+        android:textColor="#F2FFFFFF"
+        android:textColorHint="#CEFFFFFF" />
 
     <Button
         android:id="@+id/submit_compalin"
@@ -78,9 +97,4 @@
         android:onClick="saveComplain"
         />
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
 </LinearLayout>

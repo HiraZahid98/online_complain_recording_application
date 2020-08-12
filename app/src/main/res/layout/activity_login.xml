@@ -8,6 +8,7 @@
     tools:context=".Login"
     android:orientation="vertical"
     android:paddingTop="100dp"
+    android:background="@drawable/background"
     >
     <ImageView
         android:id="@+id/logo"
@@ -16,27 +17,31 @@
         android:src="@drawable/logo_complai_system"
         android:layout_gravity="center"
         />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:ems="10"
         android:hint="Email"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="187dp"
         android:paddingBottom="20dp"
-        android:layout_gravity="center"
-        />
+        android:textColor="#F2FFFFFF"
+        android:textColorHint="#F2FFFFFF"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="187dp" />
+
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:ems="10"
         android:hint="Password"
+        android:textColor="#F2FFFFFF"
+        android:textColorHint="#F2FFFFFF"
         tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="269dp"
-        android:layout_gravity="center"
-        />
+        tools:layout_editor_absoluteY="269dp" />
     <Button
         android:id="@+id/login"
         android:layout_width="130dp"

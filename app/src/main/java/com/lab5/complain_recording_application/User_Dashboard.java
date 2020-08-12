@@ -36,7 +36,7 @@ public class User_Dashboard extends Activity {
         //useremail fetch
         Intent intent = getIntent();
         str = intent.getStringExtra("name");
-        text.setText(str);
+        text.setText("Welcome "+ str );
 
 
         //intent to create complain
